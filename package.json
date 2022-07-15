@@ -1,0 +1,27 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunchencc/node-serverless.git"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.3",
+    "finalhandler": "1.2.0",
+    "router": "~1.3.7",
+    "compression": "~1.7.4",
+    "body-parser": "~1.20.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunchencc/node-serverless/issues"
+  },
+  "homepage": "https://github.com/sunchencc/node-serverless#readme"
+}
