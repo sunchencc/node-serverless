@@ -2,7 +2,7 @@
  * @Author: sunchen
  * @Date: 2022-07-11 21:32:43
  * @LastEditors: sunchen
- * @LastEditTime: 2022-07-26 21:40:32
+ * @LastEditTime: 2022-07-28 20:43:06
  * @Description: www.github.com
  */
 
@@ -12,7 +12,8 @@ const bodyParser = require('body-parser')
 
 const server = new HttpServer()
 
-server.useMiddle(compression())
+server
+.useMiddle(compression())
 .use(bodyParser.json())
 
 

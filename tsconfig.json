@@ -1,6 +1,11 @@
 {
     "compilerOptions": {
-        "outDir": "./build/"
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./build",
+        "sourceMap": true,
     },
     "include": [
         "src/**/*"

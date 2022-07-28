@@ -4,7 +4,7 @@ const BaseDataBaseServer = require("./base_database_server");
  * @Author: sunchen
  * @Date: 2022-07-27 20:50:07
  * @LastEditors: sunchen
- * @LastEditTime: 2022-07-28 20:41:12
+ * @LastEditTime: 2022-07-28 21:01:30
  * @Description: www.github.com
  */
 
@@ -17,6 +17,7 @@ class MysqlServer extends BaseDataBaseServer {
         this.connection = mysql.createConnection(mysqlConfig)
     }
 
+
     async connect () {
         this.connection.connect();   
     }
@@ -28,6 +29,13 @@ class MysqlServer extends BaseDataBaseServer {
             resolve(results)
           });
        })
+    }
+
+    async add (table, params) {
+        const preAddSql = `INSERT INTO ${ table } SET ?`
+        return new Promise((resolve, reject) => {
+            this.connection.query(preAddSql, )
+        })
     }
 }
 

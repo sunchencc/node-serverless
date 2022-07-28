@@ -2,15 +2,16 @@
  * @Author: sunchen
  * @Date: 2022-07-11 21:39:12
  * @LastEditors: sunchen
- * @LastEditTime: 2022-07-26 21:39:15
+ * @LastEditTime: 2022-07-28 21:09:13
  * @Description: www.github.com
  */
 const http = require('node:http')
 const Router = require('router')
 const serverConfig = require('../conf/server.json')
 
-class HttpServer {
-
+export default class HttpServer {
+    router
+    server
     constructor () {
         this.router = Router()
 
@@ -42,4 +43,3 @@ class HttpServer {
     }
 }
 
-module.exports = HttpServer
